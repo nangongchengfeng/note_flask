@@ -8,6 +8,11 @@
 
 <body>
 <div class="header"><i class='fa fa-sign-in'></i> 登录</div>
+<span class='login'>
+<i class="fa fa-user-plus"></i>
+<a href='{{ url_for("users.register") }}'>注册</a>
+    <a href='{{ url_for("index") }}'>首页</a>
+</span>
 <form action="{{url_for('users.login')}}" method="POST">
     <div class="row">
         {{ form.name.label }}
