@@ -4,3 +4,34 @@
 # @Email   : 1794748404@qq.com
 # @File    : db.py
 # @Software: PyCharm
+from app import app
+from flask_sqlalchemy import SQLAlchemy
+
+user = 'root'
+password = '123456'
+database = 'todoDB'
+uri = 'mysql+pymysql://%s:%s@192.168.105.20:3306/%s' % (user, password, database)
+app.config['SQLALCHEMY_DATABASE_URI'] = uri
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+orm = SQLAlchemy(app)
+
+
+class User(orm.Model):
+    __tablename__ = 'users'
+    userId = orm.Column(orm.Integer, primary_key=True)
+    name = orm.Column(orm.String(255))
+    password = orm.Column(orm.String(255))
+
+
+class Todo(orm.Model):
+    __tablename__ = 'todos'
+    todoId = orm.Column(orm.Integer, primary_key=True)
+    userId = orm.Column(orm.Integer)
+    status = orm.Column(orm.String(255))
+    title = orm.Column(orm.String(255))
+
+
+def login(name, password):
+    users = User.query.filter_by(name=name, password=password)
+    user = users.first()
+    return user
