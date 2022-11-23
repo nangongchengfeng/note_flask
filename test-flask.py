@@ -4,6 +4,9 @@
 # @Email   : 1794748404@qq.com
 # @File    : app.py
 # @Software: PyCharm
+import flask
+
+app = flask.Flask(__name__)
 
 
 @app.route('/')

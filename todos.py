@@ -4,3 +4,9 @@
 # @Email   : 1794748404@qq.com
 # @File    : todos.py
 # @Software: PyCharm
+
+from flask import Flask, render_template, request, redirect, session, jsonify
+from flask import Blueprint
+import db
+
+blueprint = Blueprint('todos', __name__, url_prefix='/todos')

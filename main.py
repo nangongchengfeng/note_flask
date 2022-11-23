@@ -5,10 +5,10 @@
 # @File    : main.py
 # @Software: PyCharm
 # 它是 Flask 程序的入口
-import db
 from app import app
 from flask import render_template, session
-import app
+
+import db
 import users
 import todos
 
@@ -30,4 +30,5 @@ def index():
         dones = []
     return render_template('index.html', hasLogin=hasLogin, todos=todos, dones=dones)
 
-    app.run()
+
+app.run(debug= True)
