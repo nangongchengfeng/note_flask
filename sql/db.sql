@@ -19,7 +19,7 @@ CREATE TABLE todos(
     PRIMARY KEY(todoId)
 );
 
-INSERT INTO users(name, password) VALUES (guest, 123);
-INSERT INTO todos(userId, status, title) VALUES (1, todo, 吃饭);
-INSERT INTO todos(userId, status, title) VALUES (1, todo, 睡觉);
-INSERT INTO todos(userId, status, title) VALUES (1, done, 作业);
+INSERT INTO users(name, password) VALUES ('guest', 123);
+INSERT INTO todos(userId, status, title) VALUES (1, 'todo', '吃饭');
+INSERT INTO todos(userId, status, title) VALUES (1, 'todo', '睡觉');
+INSERT INTO todos(userId, status, title) VALUES (1, 'done', '作业');
