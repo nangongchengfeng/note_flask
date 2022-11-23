@@ -8,7 +8,7 @@
 
 <body>
 <div class="header"><i class='fa fa-sign-in'></i> 登录</div>
-<form action="/users/login" method="POST">
+<form action="{{url_for('users.login')}}" method="POST">
     <div class="row">
         {{ form.name.label }}
         {{ form.name() }}
