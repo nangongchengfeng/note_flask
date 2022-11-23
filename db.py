@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 user = 'root'
 password = '123456'
 database = 'todoDB'
-uri = 'mysql+pymysql://%s:%s@192.168.105.20:3306/%s' % (user, password, database)
+uri = 'mysql+pymysql://%s:%s@192.168.102.20:3306/%s' % (user, password, database)
 app.config['SQLALCHEMY_DATABASE_URI'] = uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 orm = SQLAlchemy(app)

@@ -7,7 +7,7 @@
 from flask import Flask
 from datetime import timedelta
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='templates',static_folder='static')
 # 配置缓存的有效时间；
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds=1)
 # 在程序中使用到了 Session，需要使用 SECRET_KEY 进行加密

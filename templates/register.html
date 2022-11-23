@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+  <title>注册</title>
+</head>
+<body>
+  <h3><i class='fa fa-user-plus'></i> 注册</h3>
+  <form action="/users/register" method="POST">
+    <div class="row">
+      {{ form.name.label }}
+      {{ form.name() }}
+      <b>{{ form.name.errors[0] }}</b>
+    </div>
+
+    <div class="row">
+      {{ form.password.label }}
+      {{ form.password() }}
+      <b>{{ form.password.errors[0] }}</b>
+    </div>
+
+    <div class="row">
+      {{ form.submit() }}
+    </div>
+
+    {{ form.hidden_tag() }}
+  </form>
+</body>
+</html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
+  <title>登录</title>
+</head>
+
+<body>
+  <div class="header"><i class='fa fa-sign-in'></i> 登录</div>
+  <form action="/users/login" method="POST">
+    <div class="row">
+      <label for="name">姓名</label>
+      <input id="name" name="name" required type="text" value="">
+      <b></b>
+    </div>
+
+    <div class="row">
+      <label for="password">密码</label>
+      <input id="password" name="password" required type="password" value="">
+      <b></b>
+    </div>
+
+    <div class="row">
+      <input id="submit" name="submit" type="submit" value="登录">
+    </div>
+
+    <input id="csrf_token" name="csrf_token" type="hidden" value="ImRlYTZjZDEwZjU3YjNjNGY0MDVkMDc4ZDhiZTMwNWM1OTk2MjhiMzAi.X2LvVA.0x7iz2PGVHH-r8dWf7KQNMkuSAE">
+  </form>
+</body>
+</html>

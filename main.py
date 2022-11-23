@@ -28,7 +28,7 @@ def index():
         items = []
         todos = []
         dones = []
-    return render_template('template/index.html', hasLogin=hasLogin, todos=todos, dones=dones)
+    return render_template('index.html', hasLogin=hasLogin, todos=todos, dones=dones)
 
 
-app.run(debug=True)
+app.run(debug=True,port=5001)
