@@ -4,15 +4,24 @@
 # @Email   : 1794748404@qq.com
 # @File    : app.py
 # @Software: PyCharm
-from flask import Flask
-from datetime import timedelta
 
-app = Flask(__name__)
-#配置缓存的有效时间；
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds=1)
-#在程序中使用到了 Session，需要使用 SECRET_KEY 进行加密
-app.config['SECRET_KEY'] = 'P5Yv#alBh6*dq#96'
 
+@app.route('/')
+def index():
+    return "<h1>Hello, flask!</h1>"
+
+
+@app.route('/user/<name>')
+def user(name):
+    return "<h1>Hello, %s!</h1>" % name
+
+
+@app.route('/calc/')
+def calc():
+    start = "1988"
+    today = "2018"
+    rel = int(today) - int(start)
+    return "<h1>This year is Pingan's %sth anniversary, congratulations!</h1>" % rel
 
 
 if __name__ == '__main__':
