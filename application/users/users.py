@@ -10,27 +10,11 @@ from wtforms import StringField, SubmitField, PasswordField
 from wtforms.validators import DataRequired, Length
 from flask import Blueprint
 import db
+from application.users.forms import LoginForm, RegisterForm
 
 blueprint = Blueprint('users', __name__, url_prefix='/users')
 
 
-class LoginForm(FlaskForm):
-    name = StringField(
-        label='姓名',
-        validators=[
-            DataRequired(message='姓名不能为空')
-        ]
-    )
-
-    password = PasswordField(
-        label='密码',
-        validators=[
-            DataRequired(message='密码不能为空'),
-            Length(min=3, message='密码至少包括 3 个字符')
-        ]
-    )
-
-    submit = SubmitField('登录')
 
 
 @blueprint.route('/login', methods=['GET', 'POST'])
@@ -50,24 +34,6 @@ def login():
                 return redirect('/')
         return render_template('login.html', form=form)
 
-
-class RegisterForm(FlaskForm):
-    name = StringField(
-        label='姓名',
-        validators=[
-            DataRequired(message='姓名不能为空')
-        ]
-    )
-
-    password = PasswordField(
-        label='密码',
-        validators=[
-            DataRequired(message='密码不能为空'),
-            Length(min=3, message='密码至少包括 3 个字符')
-        ]
-    )
-
-    submit = SubmitField('注册')
 
 
 @blueprint.route('/register', methods=['GET', 'POST'])

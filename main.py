@@ -9,8 +9,8 @@ from app import app
 from flask import render_template, session
 
 import db
-import users
-import todos
+from application.users import users
+from application.todos import todos
 
 app.register_blueprint(users.blueprint)
 app.register_blueprint(todos.blueprint)
@@ -31,4 +31,4 @@ def index():
     return render_template('index.html', hasLogin=hasLogin, todos=todos, dones=dones)
 
 
-app.run(debug=True,port=5001)
+app.run(debug=True, port=5001)

@@ -2,7 +2,7 @@
 # @Time    : 2022/11/23 9:41
 # @Author  : weidongliang
 # @Email   : 1794748404@qq.com
-# @File    : app.py
+# @File    : application.py
 # @Software: PyCharm
 from flask import Flask
 from datetime import timedelta
