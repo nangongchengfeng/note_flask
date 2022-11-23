@@ -95,3 +95,7 @@ $ python3 main.py
 本小节介绍了待做清单的功能和程序结构，使用思维导图描述如下：
 
  ![图片描述](http://img.mukewang.com/wiki/5f6af38909f7f90e11990900.jpg) 
+
+
+
+ ![图片描述](http://img.mukewang.com/wiki/5f6aeda309657f1412000900.jpg) 

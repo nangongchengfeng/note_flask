@@ -35,3 +35,36 @@ def login(name, password):
     users = User.query.filter_by(name=name, password=password)
     user = users.first()
     return user
+
+
+def register(name, password):
+    user = User(name=name, password=password)
+    orm.session.add(user)
+    orm.session.commit()
+    return True
+
+
+def getTodos(userId):
+    todos = Todo.query.filter_by(userId=userId)
+    return todos
+
+
+def addTodo(userId, status, title):
+    todo = Todo(userId=userId, status=status, title=title)
+    orm.session.add(todo)
+    orm.session.commit()
+    return True
+
+
+def updateTodo(todoId, status):
+    todos = Todo.query.filter_by(todoId=todoId)
+    todos.update({'status': status})
+    orm.session.commit()
+    return True
+
+
+def deleteTodo(todoId):
+    todos = Todo.query.filter_by(todoId=todoId)
+    todos.delete()
+    orm.session.commit()
+    return True
