@@ -14,10 +14,13 @@ from application.todos import todos
 
 app.register_blueprint(users.blueprint)
 app.register_blueprint(todos.blueprint)
+from tools.logs import log
+from tools.iptool import get_request_ip
 
 
 @app.route("/")
 def index():
+    log.logger.info(f"{get_request_ip()}点击开始页面")
     hasLogin = session.get("hasLogin")
     if hasLogin:
         userId = session.get('userId')
@@ -31,4 +34,4 @@ def index():
     return render_template('index.html', hasLogin=hasLogin, todos=todos, dones=dones)
 
 
-app.run(debug=True, port=5001)
+app.run(debug=True, port=5000)
