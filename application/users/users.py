@@ -28,6 +28,7 @@ def login():
             if user:
                 session['hasLogin'] = True
                 session['userId'] = user.userId
+                session['username'] = user.name
                 return redirect('/')
         return render_template('login.html', form=form)
 
