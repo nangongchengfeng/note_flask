@@ -42,7 +42,7 @@
 </head>
 <body>
 <div class="loginForm">
-    <h2>用户登录</h2>
+    <h2 >用户登录</h2>
     <form action="{{url_for('users.login')}}" method="POST">
         <div class="form-group">
             <label for="exampleInputEmail1"> {{ form.name.label }}</label>
@@ -62,7 +62,8 @@
         <!--            </label>-->
         <!--        </div>-->
         <div class="button">
-            {{ form.submit() }}  &nbsp;  &nbsp; &nbsp;        &nbsp; &nbsp; &nbsp; &nbsp;            <a href="{{ url_for('users.register') }}">&nbsp;注册</a>
+            {{ form.submit() }} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a
+                href="{{ url_for('users.register') }}">&nbsp;注册</a>
 
             {{ form.hidden_tag() }}
         </div>

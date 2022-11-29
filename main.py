@@ -18,6 +18,7 @@ from tools.logs import log
 from tools.iptool import get_request_ip
 
 
+
 @app.route("/")
 def index():
     log.logger.info(f"{get_request_ip()}点击开始页面")
