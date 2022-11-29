@@ -156,3 +156,31 @@
 2022-11-29 19:40:33,834 - main.py - index - 37  - [INFO] - message:  127.0.0.1 没有登录
 2022-11-29 19:41:26,410 - main.py - index - 26  - [INFO] - message:  127.0.0.1点击开始页面
 2022-11-29 19:41:26,411 - main.py - index - 37  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:43:44,979 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:43:44,980 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:45:01,846 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:45:01,846 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:45:21,710 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:45:21,710 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:45:29,591 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:45:29,591 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:45:54,274 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:45:54,274 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:46:39,913 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:46:39,913 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:46:59,419 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:46:59,419 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:47:36,843 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:47:36,843 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:47:47,790 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:47:47,790 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:47:48,390 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:47:48,390 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:47:54,827 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:47:54,832 - main.py - index - 31  - [INFO] - message:  127.0.0.1 登录成功，用户ID：4
+2022-11-29 19:48:21,244 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:48:21,247 - main.py - index - 31  - [INFO] - message:  127.0.0.1 登录成功，用户ID：4
+2022-11-29 19:49:56,242 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:49:56,242 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 19:50:01,820 - main.py - index - 24  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 19:50:01,820 - main.py - index - 35  - [INFO] - message:  127.0.0.1 没有登录
