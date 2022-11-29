@@ -32,12 +32,16 @@ class Todo(orm.Model):
 
 
 def login(name, password):
+    from werkzeug.security import generate_password_hash
+    password = generate_password_hash(password),
     users = User.query.filter_by(name=name, password=password)
     user = users.first()
     return user
 
 
 def register(name, password):
+    from werkzeug.security import generate_password_hash
+    password = generate_password_hash(password),
     user = User(name=name, password=password)
     orm.session.add(user)
     orm.session.commit()
