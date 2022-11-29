@@ -6,28 +6,77 @@
     <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
     <script src="{{url_for('static', filename='script.js')}}"></script>
     <title>每日清单</title>
+    <style type="text/css">
+        body, td, th {
+            font-family: Verdana;
+            font-size: 9pt;
+            color: #666666;
+        }
+
+        body {
+            background-color: #FFE7E6;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #666666;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #FF99CC;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 
 <body>
-<div class='header'>
-    <i class="fa fa-calendar-plus-o"></i> 待做清单
+<div align="center">
+    <p>&nbsp;</p>
 
-    {% if hasLogin %}
-    <span class='login'>
+    <dev>
+        {% if hasLogin %}
+        <span class='login'>
       <i class="fa fa-sign-out"></i>
+            <b>{{username}}</b>
       <a href='{{url_for("users.logout")}}'>退出</a>
     </span>
-    {% else %}
-    <span class='login'>
+        {% else %}
+        <span class='login'>
       <i class="fa fa-sign-in"></i>
-      <a href='{{url_for("users.login") }}'>登录</a>
+      <a href='{{url_for("users.login") }}'>登录     |</a>
 
       <i class="fa fa-user-plus"></i>
       <a href='{{ url_for("users.register") }}'>注册</a>
     </span>
-    {% endif %}
+        {% endif %}
+    </dev>
+    <p>&nbsp;</p>
+
+    <p><img src="{{url_for('static', filename='see.jpg')}}" width="223" height="168"></p>
+    <!--    <p><a href="{{url_for('index')}}" target="_self">Enter</a></p>-->
+    <p>&nbsp;</p>
 </div>
 
+
+<br>
+<br>
+
+<div class='header'>
+    <i class="fa fa-calendar-plus-o"></i> 待做清单
+
+
+</div>
+<br>
 {% if hasLogin %}
 <div>
     <input type="text" class="row" placeholder="输入待办事项">
