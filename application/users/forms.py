@@ -14,7 +14,11 @@ class LoginForm(FlaskForm):
         label='姓名',
         validators=[
             DataRequired(message='姓名不能为空')
-        ]
+        ],
+        render_kw={
+
+            "class": "form-control"
+        }
     )
 
     password = PasswordField(
@@ -22,10 +26,19 @@ class LoginForm(FlaskForm):
         validators=[
             DataRequired(message='密码不能为空'),
             Length(min=3, message='密码至少包括 3 个字符')
-        ]
+        ],
+        render_kw={
+
+            "class": "form-control"
+        }
     )
 
-    submit = SubmitField('登录')
+    submit = SubmitField(
+        label='登录',
+        render_kw={
+            "class": "btn btn-primary"
+        }
+    )
 
 
 class RegisterForm(FlaskForm):
@@ -33,7 +46,11 @@ class RegisterForm(FlaskForm):
         label='姓名',
         validators=[
             DataRequired(message='姓名不能为空')
-        ]
+        ],
+        render_kw={
+
+            "class": "form-control"
+        }
     )
 
     password = PasswordField(
@@ -41,7 +58,16 @@ class RegisterForm(FlaskForm):
         validators=[
             DataRequired(message='密码不能为空'),
             Length(min=3, message='密码至少包括 3 个字符')
-        ]
+        ],
+        render_kw={
+
+            "class": "form-control"
+        }
     )
 
-    submit = SubmitField('注册')
+    submit = SubmitField(
+        label='注册',
+        render_kw={
+            "class": "btn btn-primary"
+        }
+    )
