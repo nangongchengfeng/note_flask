@@ -30,3 +30,11 @@
 2022-11-29 17:09:09,050 - main.py - index - 34  - [INFO] - message:  127.0.0.1 没有登录
 2022-11-29 17:09:09,279 - main.py - index - 23  - [INFO] - message:  127.0.0.1点击开始页面
 2022-11-29 17:09:09,279 - main.py - index - 34  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 17:18:55,225 - main.py - index - 23  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 17:18:55,226 - main.py - index - 34  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 17:25:48,968 - main.py - index - 23  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 17:25:48,972 - main.py - index - 30  - [INFO] - message:  127.0.0.1 登录成功，用户ID：4
+2022-11-29 17:25:51,982 - main.py - index - 23  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 17:25:51,982 - main.py - index - 34  - [INFO] - message:  127.0.0.1 没有登录
+2022-11-29 17:25:56,510 - main.py - index - 23  - [INFO] - message:  127.0.0.1点击开始页面
+2022-11-29 17:25:56,513 - main.py - index - 30  - [INFO] - message:  127.0.0.1 登录成功，用户ID：4
