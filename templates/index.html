@@ -9,9 +9,9 @@
 </head>
 
 <body>
-<div class='header'>
-    <i class="fa fa-calendar-plus-o"></i> 待做清单
-
+<br>
+<br>
+<dev>
     {% if hasLogin %}
     <span class='login'>
       <i class="fa fa-sign-out"></i>
@@ -26,8 +26,16 @@
       <a href='{{ url_for("users.register") }}'>注册</a>
     </span>
     {% endif %}
-</div>
+</dev>
+<br>
+<br>
+<br>
+<div class='header'>
+    <i class="fa fa-calendar-plus-o"></i> 待做清单
 
+
+</div>
+<br>
 {% if hasLogin %}
 <div>
     <input type="text" class="row" placeholder="输入待办事项">
