@@ -14,6 +14,7 @@ def get_request_ip():
     查询本机ip地址
     :return: ip
     """
+
     '''获取请求方的ip'''
     try:
         ip = request.remote_addr
@@ -22,7 +23,7 @@ def get_request_ip():
     except Exception as e:
         print(e)
 
-    return ip
+    # return ip
 
 
 if __name__ == '__main__':

@@ -27,10 +27,11 @@ def index():
         items = db.getTodos(userId)
         todos = [item for item in items if item.status == 'todo']
         dones = [item for item in items if item.status == 'done']
+        log.logger.info(f"{get_request_ip()} 登录成功，用户ID：{userId}")
     else:
-        items = []
         todos = []
         dones = []
+        log.logger.info(f"{get_request_ip()} 没有登录")
     return render_template('index.html', hasLogin=hasLogin, todos=todos, dones=dones)
 
 

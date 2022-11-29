@@ -13,7 +13,7 @@ project_name = "note"
 BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 log_path = os.path.join(BASE_DIR, 'logs/')
-print(log_path)
+# print(log_path)
 if not os.path.exists(log_path):
     os.mkdir(log_path)
 log_file = '{}.log'.format(project_name)
@@ -23,7 +23,7 @@ if not os.path.exists(log_path):
     os.makedirs(log_path)
 
 logFilename = log_path + log_file
-print(logFilename)
+# print(logFilename)
 
 class Logger(object):
     level_relations = {
